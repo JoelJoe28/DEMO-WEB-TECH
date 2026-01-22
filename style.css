@@ -1,0 +1,125 @@
+/* ===== Global Reset & Base Mood ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #198bd8, #0f4c75);
+    color: #ffffff;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Main Card / Container ===== */
+.container {
+    width: 90%;
+    max-width: 720px;
+    padding: 35px 40px;
+
+    background: linear-gradient(160deg, #1f1f1f, #2a2a2a);
+    border-radius: 16px;
+
+    text-align: center;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+
+    animation: fadeUp 1s ease-out;
+}
+
+/* ===== Headings ===== */
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    color: #00e5ff;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #ff8a80;
+}
+
+/* ===== Body Text ===== */
+p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin: 20px 0;
+}
+
+/* ===== Section Titles ===== */
+h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #ffd54f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===== Skills List ===== */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: linear-gradient(135deg, #a28fd4, #7e6bc4);
+    color: #1c1c1c;
+
+    margin: 10px auto;
+    padding: 10px 15px;
+    width: 70%;
+
+    border-radius: 8px;
+    font-weight: 600;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+ul li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Call-to-Action Button ===== */
+button {
+    margin-top: 30px;
+    padding: 12px 35px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(135deg, #00e5ff, #0097a7);
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 229, 255, 0.4);
+}
+
+/* ===== Entrance Animation ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
